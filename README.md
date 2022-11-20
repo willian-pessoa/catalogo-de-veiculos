@@ -41,11 +41,11 @@ Rota publica usada para fazer o login do usuario na API, dependendo do usuário 
 
 ### Rotas Front-End
 
-> /
-Pagina inicial que mostra o catálogo de veículos 
-> /login
-Pagina de login
-> /admin
+- /
+  Pagina inicial que mostra o catálogo de veículos 
+- /login
+  Pagina de login
+- /admin
 Pagina protegida, apenas usuários com token de autorização gerado no login pode acessar. Lista todos os carros cadastrados no banco de dados, é possivel cadastrar, editar ou excluir um carro do banco de dados.
 
 ### Código da pasta back-end
