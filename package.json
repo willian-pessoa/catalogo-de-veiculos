@@ -1,0 +1,19 @@
+{
+  "name": "catalogo-de-veiculos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install-server": "npm install --prefix server",
+    "install-client": "npm install --prefix client",
+    "install": "npm run install-server && npm run install-client",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "npm run watch --prefix back-end",
+    "client": "npm start --prefix front-end",
+    "watch": "concurrently \"npm run server\" \"npm run client\" ",
+    "deploy": "npm run build --prefix front-end && npm start --prefix back-end"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

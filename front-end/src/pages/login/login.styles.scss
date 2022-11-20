@@ -1,0 +1,36 @@
+.login{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: beige;
+
+  .login-container{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+    label{
+      display: flex;
+      flex-direction: column;
+    }
+
+    button{
+      cursor: pointer;
+    }
+  }
+
+  .login-demo{
+    width: 70%;
+    text-align: center;
+
+    span{
+      color: red;
+    }
+  }
+}
+
