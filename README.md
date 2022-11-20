@@ -13,7 +13,7 @@ Para rodar o projeto será necessario ter Node.js instalado. Depois de fazer o d
     
 ### Configurando Banco de Dados
 
-O projeto usa MongoDB Atlar como banco de dados, para criar e conectar ao aplicativo será preciso substituir em "./back-end/src/services/mongo.js" a varivavel "MONGO_URL" com um link de conexão válido. Um tutorial passo a passo para gerar esse link pode ser visto em: https://medium.com/reprogramabr/conectando-no-banco-de-dados-cloud-mongodb-atlas-bca63399693f
+O projeto usa MongoDB Atlas como banco de dados, para criar e conectar ao aplicativo será preciso substituir em "./back-end/src/services/mongo.js" a varivavel "MONGO_URL" com um link de conexão válido. Um tutorial passo a passo para gerar esse link pode ser visto em: https://medium.com/reprogramabr/conectando-no-banco-de-dados-cloud-mongodb-atlas-bca63399693f
 
 ### Iniciando o projeto
 
@@ -41,11 +41,11 @@ Rota publica usada para fazer o login do usuario na API, dependendo do usuário 
 
 ### Rotas Front-End
 
-- /
+> /
 Pagina inicial que mostra o catálogo de veículos 
-- /login
+> /login
 Pagina de login
-- /admin
+> /admin
 Pagina protegida, apenas usuários com token de autorização gerado no login pode acessar. Lista todos os carros cadastrados no banco de dados, é possivel cadastrar, editar ou excluir um carro do banco de dados.
 
 ### Código da pasta back-end
