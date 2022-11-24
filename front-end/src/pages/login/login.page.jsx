@@ -13,7 +13,6 @@ const Login = () => {
   const [password, setPassword] = useState("");
 
   const handleLogin = async () => {
-    console.log("name " + name + " password " + password);
     const loged = await toDoLogin(name, password);
     if (loged) {
       console.log(loged);

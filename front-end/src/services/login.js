@@ -1,5 +1,7 @@
 import axios from "axios";
 
+// Change API_URL if the server it's in a different port that the front-end
+// Example: http://localhost:8000/v1/user/login
 const API_URL = "v1/user/login"
 
 export const toDoLogin = async (name, password) => {

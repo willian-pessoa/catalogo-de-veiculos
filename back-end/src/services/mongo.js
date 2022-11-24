@@ -1,5 +1,6 @@
 const mongoose = require("mongoose")
 
+// Change MONGO_URL to connect to your own MongoDB Atlas database
 const MONGO_URL = `mongodb+srv://willian-pessoa:${process.env.MONGODB_PASSWORD}@cluster0.kmztz8f.mongodb.net/?retryWrites=true&w=majority`
 
 mongoose.connection.once("open", () => {

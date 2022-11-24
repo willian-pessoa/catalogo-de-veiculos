@@ -27,6 +27,11 @@ Como o código do repositório já conta com o build do front-end realizado, tam
 
 O projeto está configurado para rodar localmente na porta 8000, então depois de inicializado ele estará rodando na url http://localhost:8000
 
+### Alterando URL base nas requisições do front-end para o back-end
+
+Caso seja necessário modificar o url base das requisições do front-end para o back-end, como por exemplo, caso esteja rodando os dois codigos em portas locais diferentes, basta modificar a variavel "API_URL" no arquivo *./front-end/src/hooks/request.js* e no arquivo
+*./fron-end/src/services/login.js*
+
 ### Funcionamento
 
 - Na primeira inicialização o servidor vai configurar o banco de dados MongoDB Atlas usando mongoose, e vai popular o mesmo com dados de carros extraídos através de web scrapping da página: https://www.kavak.com/br/carros-usados usando puppeteer.
@@ -71,7 +76,7 @@ Contém o codigo usado para fazer o web scraping
 Contém o build do front end depois de rodar o comando "npm run deploy"
 
 ##### ./src
-Contém o codigo para rodar o servidor. No arquivo serve.js é onde é iniciado o servidor. No arquivo app.js onde o servidor express é de fato criado e é aplicado alguns middlewares.
+Contém o codigo para rodar o servidor. No arquivo *server.js* é onde é iniciado o servidor. No arquivo *app.js* onde o servidor express é de fato criado e é aplicado alguns middlewares.
 
 Na pasta *models* está o código relacionado a configuração do modelo carro usando mongoose e as funções que modifica os dados armazenados no banco de dados.
 
@@ -110,7 +115,6 @@ Código do componente principal, usado para criação das rotas usando react-rou
 
 ##### ./index.js
 Conecta todo o codigo escrito que manipula o DOM com o arquivo *index.html* na pasta *public*.
-
 
 
 
