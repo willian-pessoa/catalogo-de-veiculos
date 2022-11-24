@@ -51,7 +51,7 @@ Rota privada usada para cadastrar carros usando body contendo o json com os dado
 - DELETE v1/cars/:carId
 
 Rota privada usada para deletar um carro cadastrado através do carId
-- POST v1/login
+- POST v1/user/login
 
 Rota publica usada para fazer o login do usuario na API, dependendo do usuário gera um token JWT de autorização para utilizar as rotas privadas.
 
