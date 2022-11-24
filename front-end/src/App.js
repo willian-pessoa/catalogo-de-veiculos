@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-
 import {
   Routes,
   Route,
@@ -25,7 +23,7 @@ function App() {
             <Admin />
           </ProtectRoute>
         } />
-        <Route path="*" element={<p>There's nothing here: 404!</p>} />
+        <Route path="*" element={<h1>There's nothing here: 404!</h1>} />
       </Routes>
     </div>
   );

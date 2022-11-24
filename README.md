@@ -17,9 +17,15 @@ O projeto usa MongoDB Atlas como banco de dados, para criar e conectar ao aplica
 
 ### Iniciando o projeto
 
-Depois do banco de dados configurado para iniciar o projeto bastar rodar o comando: 
+Depois do banco de dados configurado para iniciar o projeto bastar rodar o comando abaixo, ele fará o build do front-end na pasta public do back-end e inicializará o servidor express: 
 
     npm run deploy
+
+Como o código do repositório já conta com o build do front-end realizado, também é possivel iniciar a aplicação rodando o combando:
+
+    npm run server
+
+O projeto está configurado para rodar localmente na porta 8000, então ele estará rodando na url http://localhost:8000
 
 ### Funcionamento
 
