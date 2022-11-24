@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "install-server": "npm install --prefix server",
-    "install-client": "npm install --prefix client",
+    "install-server": "cd back-end && npm install",
+    "install-client": "cd front-end && npm install ",
     "install": "npm run install-server && npm run install-client",
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "npm run watch --prefix back-end",
@@ -15,5 +15,8 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
 }
