@@ -25,7 +25,7 @@ Como o código do repositório já conta com o build do front-end realizado, tam
 
     npm run server
 
-O projeto está configurado para rodar localmente na porta 8000, então ele estará rodando na url http://localhost:8000
+O projeto está configurado para rodar localmente na porta 8000, então depois de inicializado ele estará rodando na url http://localhost:8000
 
 ### Funcionamento
 
